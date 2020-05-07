@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageRes"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/tony_romas" />
+
+        <TextView
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:textColor="#272626"
+            android:id="@+id/textNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Tony Roma's" />
+
+        <TextView
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:id="@+id/textEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Av. Lavandisca" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:id="@+id/textHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha às" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
