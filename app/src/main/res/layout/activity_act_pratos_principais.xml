@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/tony_romas" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/nomeRestaurante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -27,4 +27,41 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageClicada"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center|start"
+        android:textStyle="bold"
+        android:text="Pratos principais"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageClicada" />
+
+    <ImageView
+        android:id="@+id/imageVoltarRestaurantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/imageClicada"
+        app:layout_constraintTop_toTopOf="@+id/imageClicada"
+        app:srcCompat="@drawable/ic_arrow_back_black_28dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPratos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="310dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

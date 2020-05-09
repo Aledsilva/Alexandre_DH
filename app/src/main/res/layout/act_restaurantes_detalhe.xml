@@ -2,47 +2,50 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:elevation="6dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:elevation="6dp">
 
     <LinearLayout
+        android:id="@+id/cardViewRest"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="6dp">
 
         <ImageView
             android:id="@+id/imageRes"
-            android:scaleType="centerCrop"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="280dp"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/tony_romas" />
 
         <TextView
-            android:layout_marginStart="6dp"
-            android:layout_marginEnd="6dp"
-            android:textColor="#272626"
             android:id="@+id/textNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:text="Tony Roma's" />
-
-        <TextView
             android:layout_marginStart="6dp"
             android:layout_marginEnd="6dp"
+            android:text="Tony Roma's"
+            android:textColor="#272626"
+            android:textSize="24sp" />
+
+        <TextView
             android:id="@+id/textEndereco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
             android:text="Av. Lavandisca" />
 
         <TextView
-            android:layout_marginTop="2dp"
-            android:layout_marginStart="6dp"
-            android:layout_marginEnd="6dp"
             android:id="@+id/textHorario"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fecha às" />
+            android:layout_height="32dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="6dp"
+            android:text="Fecha às " />
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

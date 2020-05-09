@@ -7,8 +7,6 @@ public class Restaurante {
     private String endereco;
     private String horario;
 
-    public Restaurante() {
-    }
 
     public Restaurante(int imagem, String nome, String endereco, String horario) {
         this.imagem = imagem;

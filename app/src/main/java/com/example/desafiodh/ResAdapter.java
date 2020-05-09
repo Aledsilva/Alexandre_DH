@@ -14,6 +14,7 @@ import java.util.List;
 public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
 
     private List<Restaurante> restaurantes;
+
     public ResAdapter(List<Restaurante> listaRes ) {
         this.restaurantes = listaRes;
     }
@@ -35,6 +36,8 @@ public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
         holder.textNome.setText(restaurante.getNome());
         holder.textEndereco.setText(restaurante.getEndereco());
         holder.textHorario.setText(restaurante.getHorario());
+
+        //holder.itemView.
 
     }
 

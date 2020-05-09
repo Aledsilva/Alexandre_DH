@@ -5,7 +5,10 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
@@ -20,7 +23,6 @@ public class ActHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_act_home);
-
         recyclerRest = findViewById(R.id.recyclerRest);
 
         //define layout
@@ -28,7 +30,6 @@ public class ActHome extends AppCompatActivity {
         recyclerRest.setLayoutManager( layoutManager );
 
         recyclerRest.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
-
         //define adapter
         prepararRestaurantes();
         ResAdapter adapter = new ResAdapter(restaurantes);

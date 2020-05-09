@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ActPratosPrincipais"></activity>
+        <activity android:name=".ActCards"></activity>
+        <activity android:name=".ActProfile" />
+        <activity android:name=".ActPratosPrincipais" />
         <activity android:name=".ActHome" />
         <activity android:name=".ActRegister" />
         <activity android:name=".ActLogin" />
