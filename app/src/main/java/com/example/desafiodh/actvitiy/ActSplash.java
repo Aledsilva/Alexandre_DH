@@ -1,11 +1,11 @@
-package com.example.desafiodh;
+package com.example.desafiodh.actvitiy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
+import com.example.desafiodh.actvitiy.ActLogin;
 
 public class ActSplash extends AppCompatActivity {
 

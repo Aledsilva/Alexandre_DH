@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="clip_horizontal|center"
     android:longClickable="false"
-    tools:context=".ActLogin">
+    tools:context=".actvitiy.ActLogin">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/loginPass"

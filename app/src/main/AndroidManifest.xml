@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ActCards"></activity>
-        <activity android:name=".ActProfile" />
-        <activity android:name=".ActPratosPrincipais" />
-        <activity android:name=".ActHome" />
-        <activity android:name=".ActRegister" />
-        <activity android:name=".ActLogin" />
+        <activity android:name=".actvitiy.ActCards" />
+        <activity android:name=".actvitiy.ActProfile" />
+        <activity android:name=".actvitiy.ActPratosPrincipais" />
+        <activity android:name=".actvitiy.ActHome" />
+        <activity android:name=".actvitiy.ActRegister" />
+        <activity android:name=".actvitiy.ActLogin" />
         <activity
-            android:name=".ActSplash"
+            android:name=".actvitiy.ActSplash"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

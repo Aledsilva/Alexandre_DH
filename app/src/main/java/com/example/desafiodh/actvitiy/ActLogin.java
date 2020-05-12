@@ -1,4 +1,4 @@
-package com.example.desafiodh;
+package com.example.desafiodh.actvitiy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
+import com.example.desafiodh.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class ActLogin extends AppCompatActivity {

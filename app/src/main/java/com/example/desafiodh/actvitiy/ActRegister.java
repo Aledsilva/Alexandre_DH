@@ -1,4 +1,4 @@
-package com.example.desafiodh;
+package com.example.desafiodh.actvitiy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.example.desafiodh.R;
+import com.example.desafiodh.actvitiy.ActHome;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class ActRegister extends AppCompatActivity {
@@ -79,5 +81,14 @@ public class ActRegister extends AppCompatActivity {
                 startActivity(intent);
             }
         }
+
+        imageVoltar = findViewById(R.id.imageVoltar);
+        imageVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 }

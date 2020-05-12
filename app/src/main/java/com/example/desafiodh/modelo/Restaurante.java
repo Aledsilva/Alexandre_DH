@@ -1,4 +1,4 @@
-package com.example.desafiodh;
+package com.example.desafiodh.modelo;
 
 public class Restaurante {
 

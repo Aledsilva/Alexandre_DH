@@ -1,4 +1,4 @@
-package com.example.desafiodh;
+package com.example.desafiodh.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,14 +9,23 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.desafiodh.OnItemClickListener;
+import com.example.desafiodh.R;
+import com.example.desafiodh.modelo.Restaurante;
+
 import java.util.List;
 
 public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
 
     private List<Restaurante> restaurantes;
+    private OnItemClickListener onItemClickListener;
 
     public ResAdapter(List<Restaurante> listaRes ) {
         this.restaurantes = listaRes;
+    }
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
     }
 
     @NonNull
@@ -36,6 +45,7 @@ public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
         holder.textNome.setText(restaurante.getNome());
         holder.textEndereco.setText(restaurante.getEndereco());
         holder.textHorario.setText(restaurante.getHorario());
+
 
         //holder.itemView.
 
@@ -61,6 +71,12 @@ public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
             textNome = itemView.findViewById(R.id.textNome);
             textEndereco = itemView.findViewById(R.id.textEndereco);
             textHorario = itemView.findViewById(R.id.textHorario);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onItemClickListener.onItemClick();
+                }
+            });
         }
     }
 
